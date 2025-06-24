@@ -8,6 +8,7 @@ struct InfraBlueprint {
 
 	std::string style; // e.g., "OOP" or "Functional"
 	
+	std::string classOrModuleName; // e.g., "SecurityModule", "InputHandler"
 
 };
 

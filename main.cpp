@@ -2,8 +2,9 @@
 //
 
 #include <iostream>
-
-
+#include <fstream>
+#include <filesystem>
+#include <Scaffold_Builder.h>
 #include "cli_parser.h"
 #include "blueprint.h"
 

@@ -33,16 +33,22 @@
     <ClCompile Include="blueprint_builder.cpp">
       <Filter>infra</Filter>
     </ClCompile>
+    <ClCompile Include="Scaffold_Builder.cpp">
+      <Filter>infra</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="iopgen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="blueprint.h">
-      <Filter>infra</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cli_parser.h">
-      <Filter>infra</Filter>
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scaffold_Builder.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

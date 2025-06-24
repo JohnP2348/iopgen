@@ -131,11 +131,13 @@
     <ClCompile Include="blueprint_builder.cpp" />
     <ClCompile Include="cli_parser.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Scaffold_Builder.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="blueprint.h" />
     <ClInclude Include="cli_parser.h" />
     <ClInclude Include="iopgen.h" />
+    <ClInclude Include="Scaffold_Builder.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
