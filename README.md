@@ -25,8 +25,6 @@ Benefits:
 - Cleaner error handling per system
 - Systemized file structure across any language
 - More maintainable and understandable codebases
-- Introduces the ability to failback to a previous version of a module instead of breaking the code completely
-- Easier to onboard new developers with a consistent architecture
 
 iopgen Tool:
 The CLI tool 'iopgen' generates
@@ -34,6 +32,6 @@ infrastructure scaffolds for new modules,
 ensuring your project follows IOP architecture
 principles from the start.
 
-Created By: Blighted Ashes aka John Patterson
+Created By: Blighted Ashes
 
 "Don't tear down the house - just plug in the new tv."
