@@ -21,7 +21,7 @@ ProjectBlueprint collectBluePrintFromUser()
 		std::cout << "Enter the coding style (e.g., 'OOP', 'Functional'): ";
 		std::getline(std::cin, infra.style);
 
-		std::cout << "Enter the class or module name (e.g., 'SecurityModule', 'InputHandler'): ";
+		std::cout << "Enter the class, function or module name (e.g., 'SecurityModule', 'InputHandler'): ";
 		std::getline(std::cin, infra.classOrModuleName);
 		blueprint.infrastructures.push_back(infra);
 	}

@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <filesystem>
-#include <Scaffold_Builder.h>
+#include "Scaffold_Builder.h"
 #include "cli_parser.h"
 #include "blueprint.h"
 
@@ -23,6 +23,11 @@ int main()
         std::cout << " - " << infra.name << " (" << infra.style << ")\n";
     }
     // TODO: Pass this to scaffold_builder.cpp next
+    generateInfrastructureFiles(blueprint);
+
+    std::cout << "\n[Scaffold files generated.]\n";
+	std::cout << "You can now start building your project with the generated files.\n";
+
     return 0;
 }
 
