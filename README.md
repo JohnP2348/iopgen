@@ -25,6 +25,7 @@ Benefits:
 - Cleaner error handling per system
 - Systemized file structure across any language
 - More maintainable and understandable codebases
+- The ability to update a module with a fallback switch case (e.g. V2 of the security module crashes the software so it fallsback to V1 of the security module.)
 
 iopgen Tool:
 The CLI tool 'iopgen' generates
