@@ -33,6 +33,6 @@ infrastructure scaffolds for new modules,
 ensuring your project follows IOP architecture
 principles from the start.
 
-Created By: Blighted Ashes
+Created By: John Patterson
 
 "Don't tear down the house - just plug in the new tv."
