@@ -19,9 +19,15 @@ int main()
 
     std::cout << "\n[Blueprint Created]\n";
     std::cout << "Project: " << blueprint.projectName << "\n";
-    for (const auto& infra : blueprint.infrastructures) {
-        std::cout << " - " << infra.name << " (" << infra.style << ")\n";
+    for (const auto& infra : blueprint.infrastructures)
+    {
+        std::cout << " - " << infra.name << ":\n";
+        for (const auto& module : infra.modules)
+        {
+            std::cout << "   - " << module.name << " (" << module.style << ")\n";
+        }
     }
+    
     // TODO: Pass this to scaffold_builder.cpp next
     generateInfrastructureFiles(blueprint);
 
