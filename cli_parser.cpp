@@ -31,13 +31,11 @@ ProjectBlueprint collectBluePrintFromUser()
 			std::getline(std::cin, module.style);
 			std::cout << module.style << " name: ";
 			std::getline(std::cin, module.name);
+			std::cout << "Enter plug name (e.g, 'Security-AuthPlug', 'Input-ParserPlug', 'Output-FormatterPlug'): ";
+			std::getline(std::cin, module.plugName);
 			infra.modules.push_back(module);
 		}
-		//std::cout << "Enter the coding style (e.g., 'OOP', 'Functional'): ";
-		//std::getline(std::cin, infra.style);
 
-		//std::cout << "Enter the class, function or module name (e.g., 'SecurityModule', 'InputHandler'): ";
-		//std::getline(std::cin, infra.classOrModuleName);
 		blueprint.infrastructures.push_back(infra);
 	}
 	return blueprint;
