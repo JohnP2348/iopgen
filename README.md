@@ -1,8 +1,6 @@
 IOP - Infrastructure Oriented Programming
 
 IOP is a code framework designed to treat programming like infrastructure.
-Instead of building code directly into objects or functions, IOP separates systems like 
-security, plumbing, and electricity - and then plugs devices (objects/ functions) into those systems.
 This allows for a more modular and flexible approach to programming, where components can be easily 
 swapped out or upgraded without affecting the entire system.
 
