@@ -18,6 +18,12 @@ namespace {
 		mkdir(path.c_str(), 0755);
 #endif
 	}
+	void writeFileLocal(const std::string& path, const std::string& content)
+	{
+		std::ofstream file(path);
+		file << content;
+		file.close();
+	}
 	void writeFile(const std::string& path, const std::string& content)
 	{
 		std::ofstream file(path);
@@ -29,7 +35,9 @@ namespace {
 
 void generateInfrastructureFiles(const ProjectBlueprint& blueprint)
 {
-	createDirectory("infra");
+	createDirectory(blueprint.projectName); // Create the project root directory
+	createDirectory(blueprint.projectName + "/infra"); // Create directory
+
 	for (const auto& infra : blueprint.infrastructures)
 	{
 		std::string dir = blueprint.projectName + "/infra/" + infra.name;
@@ -62,7 +70,7 @@ void generateInfrastructureFiles(const ProjectBlueprint& blueprint)
 					+ className + "::~" + className + "() {}\n"
 					"void " + className + "::exampleMethod() {} \n";
 
-				writeFile(headerPath, headerContent);
+				writeFileLocal(headerPath, headerContent);
 				writeFile(sourcePath, sourceContent);
 			}
 			else if (module.style == "Functional" || module.style == "functional")
@@ -82,7 +90,7 @@ void generateInfrastructureFiles(const ProjectBlueprint& blueprint)
 					"    // Function implementation goes here\n"
 					"}\n";
 
-				writeFile(headerPath, headerContent);
+				writeFileLocal(headerPath, headerContent);
 				writeFile(sourcePath, sourceContent);
 			}
 			// Plug files they are cpp and header files that make it easier to plug a class or module into a system.
@@ -135,7 +143,7 @@ void generateInfrastructureFiles(const ProjectBlueprint& blueprint)
 					"}\n";
 			}
 			// Write the plug header and source files
-			writeFile(plugHeaderPath, plugHeaderContent);
+			writeFileLocal(plugHeaderPath, plugHeaderContent);
 			writeFile(plugSourcePath, plugSourceContent);
 			
 
