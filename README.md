@@ -90,10 +90,13 @@ What you start with:
 CPP
 
 #pragma once
+
 #include "securityV1.h"
 
 class SecurityCryptoPlug {
+
 public:
+
 	SecurityCryptoPlug() : securityV1(new SecurityV1()) {}
 	void encryptData(const std::string& data) {
 		securityV1->encryptData(data);
