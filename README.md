@@ -87,7 +87,7 @@ Here is an example of how to refactor a security module:
 
 What you start with:
 
-''CPP Code:
+``CPP Code:
 
 
 
