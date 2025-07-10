@@ -87,7 +87,7 @@ Here is an example of how to refactor a security module:
 
 What you start with:
 
-CPP
+CPP Code:
 
 
 
@@ -100,7 +100,9 @@ class SecurityCryptoPlug {
 
 public:
 
-	SecurityCryptoPlug() : securityV1(new SecurityV1()) {}
+	SecurityCryptoPlug() : securityV1(new SecurityV1()) {
+ 
+	}
 	void encryptData(const std::string& data) {
 		securityV1->encryptData(data);
 	}
