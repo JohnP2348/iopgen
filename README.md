@@ -126,7 +126,7 @@ public:
 			securityV2->decryptData(data);
 		}
 	}
-```
+
 	Simple as that
 
 	Now when you try to call SecurityCryptoPlug, it will call the new version of the security module/class.
